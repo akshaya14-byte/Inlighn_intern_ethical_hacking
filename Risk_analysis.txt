@@ -1,0 +1,69 @@
+Risk Analysis Summary – Nmap Scan
+Date: September 22, 2025
+
+This file summarizes potential security risks identified from the Nmap scan of the local network (192.168.0.xxx/24),one device was hidden from this report.
+
+Device A (TP-Link Limited)
+MAC Address: [hidden]
+Open Ports:
+- 21/tcp – FTP: High risk. Transmits credentials in plaintext. Recommended to disable or replace with SFTP
+
+- 23/tcp – Telnet: High risk. Unencrypted remote login. Strongly advised to replace with SSH
+
+- 80/tcp – HTTP: Medium risk. Web traffic is unencrypted. Suggest upgrading to HTTPS
+
+- 139/tcp – NetBIOS-SSN: Medium risk. May expose internal shares. Restrict or disable if unused
+
+- 445/tcp – Microsoft-DS (SMB): High risk. Common target for ransomware. Patch or disable if unnecessary
+
+- 1900/tcp – UPnP: Medium risk. Can expose internal services. Disable on router unless explicitly required
+
+Device B (AzureWave Technology)
+MAC Address: [hidden]
+Open Ports:
+ No open ports detected. All 1000 scanned ports were filtered (no response). Device may be protected by a firewall or operating in stealth mode.
+
+Device C
+MAC Address: [hidden]
+Open Ports:
+ No open ports detected. All scanned ports were closed (reset), No immediate risks identified.
+
+Conclusion:
+This scan revealed several open ports in different devices in my network range and I have gone through the potential risks of these open ports.
+
+
+Services on the ports:
+
+Device A (TP-Link Limited)
+MAC Address: [hidden]
+Open Ports:
+~21/tcp – FTP  
+   Function:Transfers files between devices.  
+   High risk: Sends credentials in plaintext.  
+   Recommendation: Disable or replace with SFTP.
+
+~23/tcp – Telnet  
+   Function:Remote login protocol.  
+   High risk: Unencrypted and deprecated.  
+   Recommendation: Replace with SSH.
+
+~80/tcp – HTTP  
+   Function:Hosts web pages and admin panels.  
+   Medium risk: Unencrypted traffic.  
+   Recommendation: Upgrade to HTTPS and patch web server.
+
+~139/tcp – NetBIOS-SSN  
+   Function: Windows file/printer sharing.  
+   Medium risk: May expose internal shares.  
+   Recommendation: Restrict or disable if unused.
+
+~445/tcp – Microsoft-DS (SMB)  
+   Function: File sharing over TCP.  
+   High risk: Targeted by ransomware (e.g., WannaCry).  
+   Recommendation: Patch regularly or disable.
+
+~1900/tcp – UPnP  
+   Function: Auto-discovery protocol for devices.  
+   Medium risk: Can expose internal services if misconfigured.  
+   Recommendation: Disable on router unless explicitly required.
+
