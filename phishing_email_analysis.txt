@@ -1,0 +1,45 @@
+# Phishing Email Analysis – Task 2
+# Analyst: A
+# Date: September 24, 2025
+
+ Objective
+To identify and document phishing indicators in a suspicious email sample, demonstrating awareness of common email-based attack tactics.
+
+ Sample Summary
+The email appears to be from a financial institution, urging the recipient to verify account details due to “unusual activity.” It includes a link labeled “Secure Verification Portal” and an attached `.zip` file named `AccountAlert.zip`.
+
+## Indicators of Phishing
+
+1. **Spoofed Sender Address**
+   - Display name: “Bank Security Team”
+   - Actual email: `support@secure-bank-alerts.com` (not matching the bank’s official domain)
+
+2. **Suspicious Link**
+   - Hover reveals: `http://verify-now.securebank-alerts.com/login`
+   - Domain is not affiliated with the real bank; uses misleading subdomains
+
+3. **Urgent Language**
+   - Phrases like “Immediate action required” and “Your account will be suspended”
+   - Designed to provoke panic and bypass rational scrutiny
+
+4. **Attachment**
+   - `AccountAlert.zip` contains a `.exe` file disguised as a PDF
+   - Executable files in email attachments are a major red flag
+
+5. **Header Discrepancies**
+   - SPF check failed
+   - Received-from IP does not match claimed sending domain
+   - Analyzed using MXToolbox header analyzer
+
+6. **Grammar and Formatting Issues**
+   - Multiple typos: “verifiction,” “securty,” “recieve”
+   - Inconsistent font sizes and alignment
+
+## Conclusion
+The email exhibits multiple hallmarks of phishing, including domain spoofing, urgency tactics, malicious attachments, and header anomalies. It is highly likely to be part of a credential harvesting or malware delivery campaign.
+
+## User Awareness Panel
+Users should:
+- Avoid clicking on suspicious links or downloading unexpected attachments
+- Verify sender domains before responding to urgent requests
+- Report suspicious emails to IT or security teams immediately
