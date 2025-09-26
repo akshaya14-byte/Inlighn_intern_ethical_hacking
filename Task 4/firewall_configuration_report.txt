@@ -1,0 +1,39 @@
+TASK 4 [FIREWALL CONFIGURATION REPORT]
+
+PLATFORM         : Windows 11
+TOOLS USED       : Windows Defender Firewall
+OBJECTIVE        : Blocking inbound traffic on port 23(Telnet) and verifying connectivity
+
+STEPS:
+
+1.Opened firewall settings via "wf.msc"
+
+2.Created a new inbound rule:
+  + Type = port
+  + Protocol = TCP
+  + Port = 23
+  + Action = Block the connection
+  + Rule name = Block Port 23
+
+3.Enabled Telnet protocol as it was not previously done using 
+  dism /online /Enable-Feature /FeatureName:TelnetClient
+
+4. Tested the rule using:
+   telnet 127.0.0.1 23
+
+5. Result:
+   Connection failed as expected:
+   "Could not open connection to the host, on port 23: Connect failed"
+
+6. Deleted the rule to restore original firewall state
+
+
+SUMMARY
+------------------------------------------------------------
+
+The firewall successfully blocked inbound traffic on port 23, demonstrating control over network access. Telnet was used to verify the rule, and the expected failure confirmed that the firewall was filtering traffic correctly. The rule was removed afterward to restore default settings.
+
+
+#Screenshots related to this Task are added to Task 4/steps involved in firewall folder
+
+
