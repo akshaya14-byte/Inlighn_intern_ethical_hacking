@@ -1,0 +1,31 @@
+TASK 5 [WIRESHARK CAPUTURE REPORT]
+
+PLATFORM         : Windows 10
+TOOLS USED       : Wireshark
+OBJECTIVE        : Capture live network packets and identify basic protocols and traffic types
+
+STEPS:
+
+1.Opened wireshark
+
+2.Ran the analysis on local network (wifi/ethernet) while creating traffic by opening chrome tabs
+
+3.Analysis of the different types of packets and protocols
+
+4. Exported the results as "scan.pcap"
+
+5. Applied various filters for identifying different protocols as shows in the screenshots attached in resources folder
+
+
+
+
+SUMMARY
+------------------------------------------------------------
+
+This task involved capturing and analyzing various types of internet traffic using Wireshark.  
+Protocols such as HTTP, DNS, TCP, UDP, and ICMP were identified and examined.  
+The `.pcap` file and screenshots demonstrate hands-on packet analysis and protocol awareness.
+
+#Screenshots related to this Task are added to Task 5/resources
+
+
