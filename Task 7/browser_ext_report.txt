@@ -1,0 +1,33 @@
+Task 7 – Suspicious Browser Extension Audit
+
+Objective
+Identify and remove potentially harmful or unnecessary browser extensions to improve security and performance.
+
+Platform
+Windows 10  
+Browser: Brave
+
+Tools Used
+Brave Extension Manager (`brave://extensions`)
+Manual review of installed extensions
+
+
+
+Steps Performed:
+
+1. Opened Chrome and navigated to 'chrome://extensions'.
+2. Reviewed the extension that were already installed.
+3. Verified that no hidden or inactive extensions were present.
+4. Researched how malicious extensions can harm users:
+   - Inject ads or trackers
+   - Steal browsing data or credentials
+   - Redirect search results or install malware
+   - Removed certain extensions which has access to browssing history and has access content.
+5. Restarted browser to confirm clean state and optimal performance.
+
+ Key Learnings
+
+- A clean browser with no extensions minimizes attack surface.
+- Malicious extensions often disguise themselves as productivity tools.
+- Regular audits help maintain browser hygiene and performance.
+- Even trusted extensions should be reviewed for permissions and updates.
