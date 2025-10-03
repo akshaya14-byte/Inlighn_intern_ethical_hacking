@@ -1,0 +1,50 @@
+Task 8 – VPN Setup and Privacy Report
+
+##Objective
+Understand the role of VPNs in protecting privacy and secure communication.
+
+##Platform
+Windows 10  
+VPN Client: ProtonVPN Free
+
+##Tools Used
+ProtonVPN https://protonvpn.com
+WhatIsMyIPAddress https://www.whatismyipaddress.com
+Brave Browser
+
+##Steps Performed
+
+1. Signed up for a free ProtonVPN account.
+2. Downloaded and installed the ProtonVPN client.
+3. Connected to a VPN server (united stas and japan).
+4. Verified IP address change using [whatismyipaddress.com].
+5. Browsed secure websites (Wikipedia) to confirm encrypted traffic.
+6. Disconnected VPN and compared browsing speed—minor delay during VPN use.
+
+
+##VPN Benefits
+
+- Encrypts internet traffic, protecting data from ISPs and public Wi-Fi snooping.
+- Masks real IP address, enhancing anonymity.
+- Bypasses geo-restrictions and censorship.
+- Prevents tracking by advertisers and malicious actors.
+
+
+## VPN Limitations
+
+- Free VPNs may have limited speed or server options.
+- VPN does not protect against phishing or malware directly.
+- Some websites may block VPN traffic.
+- Trust in VPN provider is essential—avoid shady services.
+- Limited browsing speed.
+
+##Browsing Speed Observation
+
+- Before VPN: Pages loaded instantly, no delay.
+- During VPN: Slight delay (~1–2 seconds) on media-heavy sites.
+- After VPN: Speed returned to normal.
+
+Conclusion: VPN added minor latency, but browsing remained smooth and secure.
+
+
+
